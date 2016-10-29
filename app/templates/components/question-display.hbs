@@ -1,4 +1,2 @@
-{{question.questionAuthor}} asked <div>{{question.question}}</div>
 
-{{update-question question=question update="update"}}
-<button {{action 'delete' question}}>Delete</button>
+{{#link-to 'question' question/:question_id}}{{question.questionAuthor}}'s question{{question.question}} {{/link-to}}

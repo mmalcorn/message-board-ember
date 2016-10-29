@@ -1,0 +1,11 @@
+<h3>{{question.questionAuthor}}</h3> asked: <br>
+<div>
+  {{question.question}}
+</div>
+
+<div>
+  <h5>Additional details about this question:</h5>
+  <p>{{question.additionalInfo}}</p>
+</div>
+
+<button {{action 'delete' question}}>Delete</button>

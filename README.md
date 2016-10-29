@@ -1,7 +1,27 @@
-# Message-board-ember
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+
+
+
+
+
+# Message-board-ember
+Question and Answer Message Board
+Create a question and answer message board where a user submits a question and other users can respond with answers.
+
+<!-- Questions should have the content of the question itself, an author and additional notes. -->
+Answers should have the content of the answer and the author.
+Include a header and/or navbar that appears on all pages containing the name of your site and a link to the home page.
+<!-- List all questions on the homepage, with only the question and the name of the author showing. -->
+Users should be able to click on a question to view additional information.
+<!-- Allow users to add and edit questions. -->
+Allow users to add answers to a question. Answers should be added and viewed on the same page as the question they respond to.
+
+Further Exploration
+If you have completed the objectives for the code review, consider adding some additional features:
+
+Add custom styling.
+Implement upvote/downvote functionality so that users may vote on answers.
+Add tags to questions.
 
 ## Prerequisites
 
@@ -50,4 +70,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-

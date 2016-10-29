@@ -1,0 +1,11 @@
+<header>
+  <h2>Mind Quest's Message Board</h2>
+  <h3>Ask a question, and someone will answer you:</h3>
+</header>
+<h6>Need you be reminded that some answers will be sarcastic and tactless; some will be serious and add to your personal breadth of facts.  From the useless to the useful you will find some sort of a shift in your mental state.</h6>
+
+<ul>
+  {{#each model as |question|}}
+     {{question-display question=question}}
+  {{/each}}
+</ul>

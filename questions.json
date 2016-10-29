@@ -1,0 +1,14 @@
+{ "questions": [{
+    "question": "Who was the first person to milk a cow?",
+    "questionAuthor": "James Yellowtail",
+    "additionalInfo": "Curious farm boy"
+  }, {
+    "question": "Where can I find a good dirt cup in Philadelphia?",
+    "questionAuthor": "Kelli DirtWorm",
+    "additionalInfo": "I live in center city"
+  }, {
+    "question": "Where is my daughter?",
+    "questionAuthor": "Richard Linklater",
+    "additionalInfo": "Nothing to add."
+  }]
+}

@@ -6,10 +6,16 @@
 <h6>Need you be reminded that some answers will be sarcastic and tactless; some will be serious and add to your personal breadth of facts.  From the useless to the useful you will find some sort of a shift in your mental state.</h6>
 
 <ul>
-  {{#each model as |question|}}
+  {{#each model.questions as |question|}}
      {{question-display question=question update="update" destroyQuestion="destroyQuestion"}}
   {{/each}}
 </ul>
 
-
 {{new-question saveQuestion1="saveQuestion2"}}
+
+  <h2>Answers:</h2>
+  {{#each model.answers as |answer|}}
+    {{answer.answer}} - by {{answer.answerAuthor}}
+  {{/each}}
+
+{{new-answers saveAnswer="saveAnswer"}}

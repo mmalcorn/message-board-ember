@@ -10,5 +10,15 @@
     "question": "Where is my daughter?",
     "questionAuthor": "Richard Linklater",
     "additionalInfo": "Nothing to add."
-  }]
+  }],
+
+"answers": [{
+  "answer": "WAWA!",
+  "answerAuthor": "Doug Funny",
+  "question": "Where can i find a good dirt up in philadelphia?"
+}, {
+  "answer": "I think you left her in the Boyhood script that you last wrote.",
+  "answerAuthor": "James Dean",
+  "question": "Where is my daughter?"
+}]
 }

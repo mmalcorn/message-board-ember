@@ -1,0 +1,16 @@
+<h2>Submit an answer</h2>
+<div>
+  <form>
+    <div class="form-group">
+      <label for="answer-input">Type the question you're itching to have answered below:</label>
+      {{input value=answer-input id=answer-input}}
+    </div>
+
+    <div class="form-group">
+      <label for="answer-author">Enter your name:</label>
+      {{input value=answer-author id=answer-author}}
+    </div>
+
+    <button {{action 'saveAnswer'}}>Save</button>
+  </form>
+</div>

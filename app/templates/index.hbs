@@ -14,8 +14,10 @@
 {{new-question saveQuestion1="saveQuestion2"}}
 
   <h2>Answers:</h2>
-  {{#each model.answers as |answer|}}
-    {{answer.answer}} - by {{answer.answerAuthor}}
-  {{/each}}
+  <ul>
+    {{#each model.answers as |answer|}}
+      <li> {{answer.answer}} - by {{answer.answerAuthor}}</li>
+    {{/each}}
+  </ul>
 
 {{new-answers saveAnswer="saveAnswer"}}

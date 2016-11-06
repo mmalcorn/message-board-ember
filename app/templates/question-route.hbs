@@ -1,4 +1,11 @@
+{{question-details question=model destroyQuestion="destroyQuestion"}}
 
+<div>
+  {{#each model.answers as |answer|}}
+    {{answer.answer}} - answered by <strong>{{answer.answerAuthor}}</strong>
+  {{/each}}
+</div>
 
+{{new-answer question=model saveAnswer="saveAnswer"}}
 
-{{question-details question=model destroyQuestion="destroyQuestion"}} {{update-question question=model update="update"}}
+{{update-question question=model update="update"}}

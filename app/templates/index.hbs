@@ -9,15 +9,7 @@
   {{#each model.questions as |question|}}
      {{question-display question=question update="update" destroyQuestion="destroyQuestion"}}
   {{/each}}
-</ul>
 
 {{new-question saveQuestion1="saveQuestion2"}}
 
-  <h2>Answers:</h2>
-  <ul>
-    {{#each model.answers as |answer|}}
-      <li> {{answer.answer}} - by {{answer.answerAuthor}}</li>
-    {{/each}}
-  </ul>
-
-{{new-answers saveAnswer="saveAnswer"}}
+</ul>

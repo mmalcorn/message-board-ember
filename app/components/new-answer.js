@@ -10,6 +10,11 @@ export default Ember.Component.extend({
         question: this.get('question')
       };
       this.sendAction('saveAnswer', params);
+    },
+    delete(answer) {
+      if(confirm('Are you sure you want to delete this answer?')) {
+      this.sendAction('destroyAnswer', answer);
+      }
     }
   }
 });

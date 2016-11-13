@@ -1,13 +1,15 @@
-<div class="container">
-  <h3><em>{{question.questionAuthor}}</em></h3> <strong>asked:<br></strong> <br>
-  <div>
-    {{question.question}}
-  </div>
+<div class="container" id="q-detail-container">
+  <div class="row">
+    <p class="question-details">{{question.questionAuthor}}  <strong>asked:</strong></p>
+    <div>
+      <strong id="">{{question.question}}</strong>
+    </div>
 
-  <div>
-  <h4>Additional details about this question:</h4>
-  <p>{{question.additionalInfo}}</p>
-  </div>
+    <div>
+    <h4>Additional details about this question:</h4>
+    <p class="addInfo">{{question.additionalInfo}}</p>
+    </div>
+</div>
 
-  <button class="delete-btn" {{action 'delete' question}}>Delete</button>
+  <button class="btn btn-danger" {{action 'delete' question}}>Delete</button>
 </div>

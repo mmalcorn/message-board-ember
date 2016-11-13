@@ -17,9 +17,10 @@
       {{input value=additional-info id=additional-info}}
     </div>
 
-    <button {{action 'saveQuestion'}}>Save</button>
+    <button class="btn btn-primary" {{action 'saveQuestion'}}>Save</button>
   </form>
 </div>
 {{else}}
-  <button {{action 'questionFormShow'}}>New Question</button>
+<br>
+  <button class="btn btn-warning" {{action 'questionFormShow'}}>New Question</button>
 {{/if}}

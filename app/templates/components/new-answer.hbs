@@ -1,3 +1,7 @@
+<div class="container">
+
+<button {{action 'delete' answer}}>Remove answer</button>
+
 <h2>Submit an answer</h2>
   <form>
     <div class="form-group">
@@ -8,7 +12,10 @@
     <div class="form-group">
       <label for="answer-author">Enter your name:</label>
       {{input value=userAnswerAuthor id="userAnswerAuthor"}}
-    </div>
 
-    <button {{action 'saveAnswer'}}>Post answer</button>
+      <div>
+        <button class="btn btn-success" {{action 'saveAnswer'}}>Post answer</button>
+      </div>
+    </div>
   </form>
+</div>

@@ -1,5 +1,5 @@
 
 {{#link-to 'question-route' question.id}}
   {{question.questionAuthor}}'s asked
-  "{{question.question}}"?
+  "{{question.question}}?" <button class="btn btn-success" {{action 'markFavQuestion' question}}>Mark Favorite</button>
 {{/link-to}}

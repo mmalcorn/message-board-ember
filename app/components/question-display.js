@@ -9,7 +9,7 @@ actions: {
     },
     markFavQuestion(question) {
       this.get('favoriteQuestion').add(question);
-      console.log('favoriteQuestion');
+      this.transitionTo('index');
     },
   }
 });

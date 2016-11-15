@@ -1,7 +1,5 @@
 <div class="container">
-
   <header>
-    <h2>Mind Quest's Message Board</h2>
     <hr>
     <h3>Ask a question, and someone will answer you:</h3>
   </header>
@@ -15,6 +13,7 @@
       {{#each model.questions as |question|}}
          {{question-display question=question update="update" destroyQuestion="destroyQuestion"}}
       {{/each}}
+      <hr>
     {{new-question saveQuestion1="saveQuestion2"}}
 
     {{#link-to 'favorite-questions-route'}}View Your Favorite Questions{{/link-to}}

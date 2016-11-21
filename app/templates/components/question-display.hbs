@@ -4,6 +4,8 @@
   "{{question.question}}?"
 {{/link-to}}
 
+<p>{{answerToQuestion}} answers</p>
+
 {{#link-to 'favorite-questions-route'}}
 <span {{action 'markFavQuestion' question}} class="glyphicon glyphicon-heart"> Favorite</span>
 {{/link-to}}

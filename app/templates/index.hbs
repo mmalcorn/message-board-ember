@@ -1,17 +1,18 @@
 <div class="container">
+  <body>
   <header>
     <hr>
-    <h3>Ask a question, and someone will answer you:</h3>
+    <div id="title">Ask a question, and someone will answer you:</div>
   </header>
 
   <div class="row">
-    <div class="col-xs-12">
-      <h6>Need you be reminded that some answers will be sarcastic and tactless; some will be serious and add to your personal breadth of facts.  From the useless to the useful you will find some sort of a shift in your mental state.</h6>
+    <div class="col-xs-12" id="slogan">
+      Need you be reminded that some answers will be sarcastic and tactless; some will be serious and add to your personal breadth of facts.  From the useless to the useful you will find some sort of a shift in your mental state.
   </div>
 
     <ul>
       {{#each model.questions as |question|}}
-        <!-- {{question-popularity question}} -->
+        {{question-popularity question}}
          {{question-display question=question update="update" destroyQuestion="destroyQuestion"}}
       {{/each}}
       <hr>
@@ -21,4 +22,5 @@
 
     </ul>
   </div>
+</body>
 </div>

@@ -1,3 +1,28 @@
 #q-detail-container {
   margin-top: 10%;
 }
+
+body {
+  background: #a79;
+  font-family: Helvetica;
+  line-height: 1.8
+}
+
+a {
+  color: black;
+  font-family: Helvetica;
+  font-weight: bolder;
+}
+
+#title {
+  font-size: 30px;
+  font-family: cursive;
+}
+
+#slogan {
+  line-height: 1.5;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 18px;
+}

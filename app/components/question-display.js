@@ -4,8 +4,10 @@ export default Ember.Component.extend({
    favoriteQuestion: Ember.inject.service(),
 
    answerToQuestion: Ember.computed(function() {
-    var answers_per_question = this.get('question.answers.length');
-    return answers_per_question;
+      var answers_per_question = this.get('question.answers.length');
+      if(answers_per_question > 0) {
+      return answers_per_question + ' answers';
+  }
 }),
 
 

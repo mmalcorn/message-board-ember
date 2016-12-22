@@ -11,6 +11,7 @@
 
     <ul>
       {{#each model.questions as |question|}}
+        <!-- {{question-popularity question}} -->
          {{question-display question=question update="update" destroyQuestion="destroyQuestion"}}
       {{/each}}
       <hr>
